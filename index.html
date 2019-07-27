@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		@keyframes ani{
+			from{width: 0px;margin-left:0px ;}
+			10%{width: 40px;}
+			50%{width: 50px;}
+			90%{width: 90px;}
+			to{width: 100px;margin-left:50px ;}
+		}
+		
+		
+		/* 圆圈乱转动画 */
+		@keyframes name{
+			from{transform: rotate(0);}
+			to{transform: rotate(360deg);}
+		}
+		@keyframes name1{
+			from{width: 300px;height: 300px;}
+			to{width: 350px;height: 350px;}
+		}
+		
+		/* 静态圈圈 */
+		.rot{width: 500px;height: 500px;position: relative;margin: 0 auto;padding: 2px;}
+		.crcle1{position: absolute;width: 300px;height: 300px;border-radius: 50%;top: 50%;left: 50%;border: 1px solid blue;
+		margin-top: -150px;margin-left: -150px;border-top-color: transparent;animation:name 3s linear infinite ;}
+		.crcle2{position: absolute;width: 250px;height: 250px;border-radius: 50%;top: 50%;left: 50%;border: 1px solid brown;
+		margin-top: -125px;margin-left: -125px;border-bottom-color: transparent;animation:name 2s linear infinite ;}
+		.crcle3{position: absolute;width: 200px;height: 200px;border-radius: 50%;top: 50%;left: 50%;border: 1px solid red;
+		margin-top: -100px;margin-left: -100px;border-left-color: transparent;animation:name 1s linear infinite ;} 
+		/* .rot:hover .crcle1{animation-play-state: paused;animation: name1 2s linear infinite alternate;} */ 
+		
+		/* transition过渡效果-动画 */
+		.transition{width: 200px;height: 200px;background: red;transition: all 2s linear;margin: 0 auto;}
+		.transition:hover{width: 300px;height: 300px;}
+		
+		/* 太极图 */
+		
+		@keyframes name2{
+			from{transform: rotate(0);}
+			to{transform: rotate(360deg);}
+		}
+		/* 静态内容 */
+		.tai{width: 400px;height: 400px;position: relative;margin: 0 auto;padding: 2px;animation:name2 3s linear infinite ;}
+		.level1{position: absolute;width: 100px;height: 200px;top: 100px;left: 100px;border: 1px solid black;border-radius: 100px 0 0 100px;
+		background: #fff;}
+		.level2{position: absolute;width: 100px;height: 200px;top: 100px;left: 200px;border: 1px solid black;border-radius: 0px 100px 100px 0;
+		background: black;}
+		.level3{position: absolute;width: 100px;height: 100px;top: 100px;left: 200px;border-radius: 100px;
+		background: black;margin-left: -50px;}
+		.level4{position: absolute;width: 100px;height: 100px;top: 200px;left: 200px;border-radius: 100px;
+		background: #fff;margin-left: -50px;}
+		.level5{position: absolute;width: 30px;height: 30px;top: 135px;left: 235px;border-radius: 100px;
+		background: #fff;margin-left: -50px;}
+		.level6{position: absolute;width: 30px;height: 30px;top: 235px;left: 235px;border-radius: 100px;
+		background: black;margin-left: -50px;}
+		
+		
+	</style>
+	<body>
+		<div class="animation">
+			
+		</div>
+		<div class="rot">
+			<div class="crcle1"></div>
+			<div class="crcle2"></div>
+			<div class="crcle3"></div>
+		</div>
+		<!-- 太极图 -->
+		<div class="tai">
+			<div class="level1"></div>
+			<div class="level2"></div>
+			<div class="level3"></div>
+			<div class="level4"></div>
+			<div class="level5"></div>
+			<div class="level6"></div>
+		</div>
+	</body>
+</html>
